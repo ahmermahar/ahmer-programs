@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        body{
+            color: white;
+           background-color: black;}
+        .container {
+            text-align: center;
+            border: 4px solid grey;
+            width: 340px;
+            height: 470px;
+            margin: auto;
+            background-color:rgb(172, 38, 67);
+        }
+        .circle{
+            border: 2px solid black;
+            margin-left: 50px;
+            border-radius: 50%;
+            
+            background-color:rgba(46, 18, 201, 0.548);
+            padding-top: 90px;
+            font-size: 20px;
+            padding-bottom: 90px;
+            text-align: center;
+             width: 250px;
+            
+        }
+        p{
+            display: inline-block; 
+            font-size: 30px;
+        }
+        
+        h2 {
+            color:black;
+            display: inline-block;
+            width: 60px;
+            
+
+            background-color:rgba(46, 18, 201, 0.548);
+        }
+        .button{
+            margin-top: 50px;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color:rgb(32, 51, 160);
+            border-radius: 40%;
+        }
+        #mil{
+            color:rgb(148, 44, 67);
+        }
+      
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <div class="header">
+            <h1>Stop Watch</h1>
+            <hr>
+        </div>
+        <div class="circle">
+            <h2 id="min">00</h2>
+            <p >:</p>
+            <h2 id="sec">00</h2>
+            <p >.</p>
+            <h2 id="mil">00</h2>
+        </div>
+        <div class="button">
+            <button class="btn" id="submit" onclick="start()">Start</button>
+            <button class="btn" onclick="stop()">Pause</button>
+            <button class="btn" onclick="reset()">Reset</button>
+        </div>
+        <div >
+            <h1>History</h1>
+            <h2 id="record"></h2>
+        </div>
+    </div>
+
+    
+</body>
+<script src="app.js"></script>
+</html>
